@@ -7,11 +7,11 @@ public class Debito {
     private double saldo;
 
     // Constructor
-    public Debito(int id, String cliente, Date vencimiento, double saldo) {
+    public Debito(int id, String cliente, Date vencimiento) {
         this.id = id;
         this.cliente = cliente;
         this.vencimiento = vencimiento;
-        this.saldo = saldo;
+        this.saldo = 0;
     }
 
     // Getters & Setters
