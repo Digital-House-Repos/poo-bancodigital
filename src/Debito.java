@@ -3,18 +3,18 @@ import java.util.Date;
 public class Debito {
     private int id;
     private String cliente;
-    private Date month;
-    private Date year;
-    private double value;
+    private Date vencimiento;
+    private double saldo;
 
-    public Debito(int id, String cliente, Date month, Date year, double value) {
+    // Constructor
+    public Debito(int id, String cliente, Date vencimiento, double saldo) {
         this.id = id;
         this.cliente = cliente;
-        this.month = month;
-        this.year = year;
-        this.value = value;
+        this.vencimiento = vencimiento;
+        this.saldo = saldo;
     }
 
+    // Getters & Setters
     public int getId() {
         return id;
     }
@@ -23,43 +23,36 @@ public class Debito {
         this.id = id;
     }
 
-    public String getName() {
+    public String getCliente() {
         return cliente;
     }
 
-    public void setName(String cliente) {
+    public void setCliente(String cliente) {
         this.cliente = cliente;
     }
 
-    public Date getMonth() {
-        return month;
+    public Date getVencimiento() {
+        return vencimiento;
     }
 
-    public void setMonth(Date month) {
-        this.month = month;
+    public void setVencimiento(Date vencimiento) {
+        this.vencimiento = vencimiento;
     }
 
-    public Date getYear() {
-        return year;
+    public double getSaldo() {
+        return saldo;
     }
 
-    public void setYear(Date year) {
-        this.year = year;
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
 
-    public double getValue() {
-        return value;
-    }
-
-    public void setValue(double value) {
-        this.value = value;
-    }
-
+    // Methods
     public void retirar(double monto) {
-        this.value -= monto;
+        this.saldo -= monto;
     }
 
     public void depositar(double monto) {
-        this.value += monto;
+        this.saldo += monto;
     }
 }
