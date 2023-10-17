@@ -54,4 +54,12 @@ public class Debito {
     public void setValue(double value) {
         this.value = value;
     }
+
+    public void retirar(double monto) {
+        this.value -= monto;
+    }
+
+    public void depositar(double monto) {
+        this.value += monto;
+    }
 }
