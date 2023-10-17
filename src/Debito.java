@@ -2,14 +2,14 @@ import java.util.Date;
 
 public class Debito {
     private int id;
-    private String name;
+    private String cliente;
     private Date month;
     private Date year;
     private double value;
 
-    public Debito(int id, String name, Date month, Date year, double value) {
+    public Debito(int id, String cliente, Date month, Date year, double value) {
         this.id = id;
-        this.name = name;
+        this.cliente = cliente;
         this.month = month;
         this.year = year;
         this.value = value;
@@ -24,11 +24,11 @@ public class Debito {
     }
 
     public String getName() {
-        return name;
+        return cliente;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String cliente) {
+        this.cliente = cliente;
     }
 
     public Date getMonth() {

@@ -1,15 +1,15 @@
 public class Credito {
     private int id;
-    private String name;
+    private String cliente;
     private double value;
     private double interes;
     private int cuotas;
     private double consumido;
     private double impago;
 
-    public Credito(int id, String name, double value, double interes, int cuotas, double consumido, double impago) {
+    public Credito(int id, String cliente, double value, double interes, int cuotas, double consumido, double impago) {
         this.id = id;
-        this.name = name;
+        this.cliente = cliente;
         this.value = value;
         this.interes = interes;
         this.cuotas = cuotas;
@@ -26,11 +26,11 @@ public class Credito {
     }
 
     public String getName() {
-        return name;
+        return cliente;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String cliente) {
+        this.cliente = cliente;
     }
 
     public double getValue() {
